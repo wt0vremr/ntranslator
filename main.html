@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+
+    <link rel="stylesheet" href="static/css/uikit.almost-flat.min.css"/>
+    <link rel="stylesheet" href="static/css/translator.css"/>
+
+    <script src="static/js/l10n.js"></script>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/uikit.min.js"></script>
+    <script src="static/js/utils.js"></script>
+    <script src="static/js/main.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+
+    <title></title>
+
+</head>
+<body>
+<div class="uk-form uk-margin-top uk-margin-bottom uk-margin-left uk-margin-right">
+    <div class="uk-grid">
+        <div id="statusbar" class="uk-width-1-1 uk-text-primary size">Ready</div>
+
+        <div class="uk-width-1-1 uk-margin-bottom size">
+            <hr>
+        </div>
+
+        <div class="uk-width-5-10 size">
+            <select id="from" class="uk-width-1-1" onchange="saveprefs();">
+                <option value="en">English</option>
+                <option value="ru">Russian</option>
+                <option value="es">Spanish</option>
+                <option value="de">German</option>
+            </select>
+        </div>
+        <div class="uk-width-5-10">
+            <select id="to" class="uk-width-1-1" onchange="saveprefs();">
+                <option value="ru">Russian</option>
+                <option value="es">Spanish</option>
+                <option value="de">German</option>
+            </select>
+        </div>
+
+        <div class="uk-width-1-1 uk-margin-top  uk-margin-bottom size">
+            <textarea id="t" placeholder="I want to translate..." class="uk-width-1-1"></textarea>
+        </div>
+
+
+        <div class="uk-width-1-1" >
+            <div class="uk-panel-box uk-panel uk-width-1-1" style="overflow-y: scroll;" id="r">Test</div>
+        </div>
+
+        <div class="uk-width-1-1 uk-margin-top uk-margin-bottom footer size">
+
+            <form id="donate" class="uk-width-1-1" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="J9TP93CJ563TN">
+                <input class="uk-button uk-button-success uk-margin-bottom uk-width-1-1" type="submit" value="Donate with PayPal">
+            </form>
+
+            <button class="uk-button uk-button-primary uk-width-1-1 size" onclick="uiCall();">
+                Translate
+            </button>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

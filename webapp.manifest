@@ -1,0 +1,20 @@
+{
+    "name": "Yandex Translator",
+    "description": "Unofficial client for Yandex translator",
+    "launch_path": "/main.html",
+    "icons": {
+        "64": "/static/img/icon-128.png",
+        "128": "/static/img/icon-128.png"
+    },
+    "permissions": {
+        "systemXHR": {
+            "description": "Allows loading remote content"
+        }
+    },
+    "developer": {
+        "name": "Dmitry Horonitel",
+        "url": "http://vk.com/horonitel"
+    },
+    "default_locale": "en"
+
+}
